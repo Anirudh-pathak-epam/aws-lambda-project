@@ -1,0 +1,12 @@
+resources:
+  - name: hello_world
+    type: lambda
+    properties:
+      function_url: true
+      role: hello_world-role
+      memory: 512
+      timeout: 10
+      runtime: java17
+      handler: com.task02.HelloWorld::handleRequest
+      aliases:
+        - name: learn
